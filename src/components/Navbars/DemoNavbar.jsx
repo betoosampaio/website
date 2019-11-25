@@ -75,11 +75,10 @@ class Navbars extends React.Component {
                   </NavLink>
                 </UncontrolledDropdown>
 
-
                 <UncontrolledDropdown nav>
                   <NavLink
                     className="nav-link-icon"
-                    href="http://localhost:3000/#/registrar"
+                    to="/contato-page" tag={Link}
                   > Contato
                     <span className="nav-link-inner--text d-lg-none"></span>
                   </NavLink>

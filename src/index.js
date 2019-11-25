@@ -8,6 +8,7 @@ import "assets/scss/argon-design-system-react.scss";
 
 import Landing from "views/examples/Landing.jsx";
 import QuemSomos from "views/examples/QuemSomos.jsx";
+import Contato from "views/examples/Contato.jsx";
 
 
 ReactDOM.render(
@@ -25,6 +26,13 @@ ReactDOM.render(
         path="/quemsomos-page"
         exact
         render={props => <QuemSomos {...props} />}
+      />
+
+      <Route path="/" exact render={props => <Contato {...props} />} />
+      <Route
+        path="/contato-page"
+        exact
+        render={props => <Contato {...props} />}
       />
 
       <Redirect to="/" />
