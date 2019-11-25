@@ -6,7 +6,6 @@ import "assets/vendor/nucleo/css/nucleo.css";
 import "assets/vendor/font-awesome/css/font-awesome.min.css";
 import "assets/scss/argon-design-system-react.scss";
 
-
 import Landing from "views/examples/Landing.jsx";
 import QuemSomos from "views/examples/QuemSomos.jsx";
 
