@@ -9,11 +9,6 @@ import {
   Card,
   CardBody,
   CardImg,
-  FormGroup,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
   Container,
   Row,
   Col
@@ -60,8 +55,9 @@ class Landing extends React.Component {
                         <span>Lorem ipsum lorem ipsum</span>
                       </h1>
                       <p className="lead text-white">
-                        Aqui vai alguma informação relevante sobre o FREED
-                        Nossa solução para restaurantes etc...
+                        Sistema para <a href="http://localhost:3003/#/login">gerenciamento de restaurantes. </a>
+                        <p></p>
+                        Baixe o app e faça você mesmo seus pedidos. Sem fila, sem burocracia, e sem demora!
                       </p>
                       <div className="btn-wrapper">
                         <Button
@@ -566,7 +562,7 @@ class Landing extends React.Component {
                 />
               </svg>
             </div>
-          </section>         
+          </section>
 
         </main>
         <SimpleFooter />

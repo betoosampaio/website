@@ -93,6 +93,15 @@ class Navbars extends React.Component {
                   </NavLink>
                 </NavItem>
 
+                <NavItem>
+                  <NavLink
+                    className="nav-link-icon"
+                    to="/hero-page" tag={Link}
+                  > Hero
+                    <span className="nav-link-inner--text d-lg-none"></span>
+                  </NavLink>
+                </NavItem>
+
               </Nav>
             </UncontrolledCollapse>
           </Container>
