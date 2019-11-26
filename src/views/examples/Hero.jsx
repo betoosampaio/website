@@ -67,8 +67,9 @@ class CardsFooter extends React.Component {
               </Col>
             </Row>
           </Container>
+          <hr />
           <Container>
-            <Row className=" row-grid align-items-center mb-5">
+            <Row className="row-grid align-items-center mb-5">
               <Col lg="6">
                 <h3 className=" text-primary font-weight-light mb-2">
                   Freedapp - solução para restaurantes
@@ -113,8 +114,7 @@ class CardsFooter extends React.Component {
                 <div className=" copyright">
                   © {new Date().getFullYear()}{" "}
                   <a
-                    href="https://www.creative-tim.com?ref=adsr-footer"
-                    target="_blank"
+                    href="https://www.freedapp.com.br"                   
                   >
                     Freed app - feito com <i className=" fa fa-heart" />
                   </a>
