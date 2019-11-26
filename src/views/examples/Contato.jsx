@@ -1,7 +1,6 @@
 import React from "react";
 import classnames from "classnames";
 
-// reactstrap components
 import {
   Button,
   Card,
@@ -14,16 +13,21 @@ import {
   InputGroupAddon,
   InputGroupText,
   InputGroup,
-
-
+  Modal,
 } from "reactstrap";
 
-// core components
 import DemoNavbar from "components/Navbars/DemoNavbar.jsx";
 import SimpleFooter from "components/Footers/SimpleFooter.jsx";
 
 class Contato extends React.Component {
-  state = {};
+  state = {
+    defaultModal: false
+  };
+  toggleModal = state => {
+    this.setState({
+      [state]: !this.state[state]
+    });
+  };
 
   componentDidMount() {
     document.documentElement.scrollTop = 0;
@@ -35,10 +39,10 @@ class Contato extends React.Component {
       <>
         <DemoNavbar />
         <main className="contato-page" ref="main">
-        <section className="section section-lg bg-gradient-primary">
+          <section className="section section-lg bg-gradient-primary">
             <Container className="pt-lg pb-150">
-              
-              
+
+
             </Container>
             {/* SVG separator */}
             <div className="separator separator-bottom separator-skew zindex-100">
@@ -122,12 +126,66 @@ class Contato extends React.Component {
                           color="primary"
                           size="lg"
                           type="button"
+                          onClick={() => this.toggleModal("notificationModal")}
                         >
                           Enviar mensagem
                         </Button>
                       </div>
                     </CardBody>
                   </Card>
+
+
+
+
+                  <Modal
+                    className="modal-dialog-centered modal-primary"
+                    contentClassName="bg-gradient-primary"
+                    isOpen={this.state.notificationModal}
+                    toggle={() => this.toggleModal("notificationModal")}
+                  >
+                    <div className="modal-header modal-primary">
+                      <h6 className="modal-title" id="modal-title-notification">
+                        Mensagem enviada com sucesso!
+                      </h6>
+                      <button
+                        aria-label="Close"
+                        className="close"
+                        data-dismiss="modal"
+                        type="button"
+                        onClick={() => this.toggleModal("notificationModal")}
+                      >
+                        <span aria-hidden={true}>×</span>
+                      </button>
+                    </div>
+                    <div className="modal-body">
+                      <div className="py-3 text-center">
+                        <i className="ni ni-bell-55 ni-3x" />
+                        <h4 className="heading mt-4">Atenção!</h4>
+                        <p>
+                          Sua mensagem foi enviada com sucesso!
+                         Fique de olho na sua caixa de entrada que em breve
+                         nosso time entrará em contato com você.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="modal-footer">
+
+                      <Button className="btn-white" color="default" type="button">
+                        Okay, entendi
+                      </Button>
+
+                      <Button
+                        className="text-white ml-auto"
+                        color="link"
+                        data-dismiss="modal"
+                        type="button"
+                        onClick={() => this.toggleModal("notificationModal")}
+                      >
+                        Fechar
+                      </Button>
+                    </div>
+                  </Modal>
+
                 </Col>
               </Row>
             </Container>
