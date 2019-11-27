@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Headroom from "headroom.js";
 // reactstrap components
 import {
   UncontrolledCollapse,
@@ -16,12 +17,19 @@ import {
 } from "reactstrap";
 
 class Navbars extends React.Component {
+
+  componentDidMount() {
+    let headroom = new Headroom(document.getElementById("navbar-main"));
+    // initialise
+    headroom.init();
+  }
   render() {
     return (
       <>
         <Navbar
-          className="navbar-horizontal navbar-dark bg-primary"
+          className="navbar-main navbar-transparent navbar-light headroom"
           expand="lg"
+          id="navbar-main"
         >
           <Container>
             <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>

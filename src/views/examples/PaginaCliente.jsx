@@ -31,6 +31,7 @@ class PaginaCliente extends React.Component {
     return (
       <>
         <DemoNavbar />
+
         <main ref="main">
           <div className="position-relative">
             {/* shape Hero */}
@@ -461,6 +462,7 @@ class PaginaCliente extends React.Component {
           </section>
 
         </main>
+
         <SimpleFooter />
       </>
     );

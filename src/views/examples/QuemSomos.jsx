@@ -7,7 +7,7 @@ import { Button, Card, Container, Row, Col } from "reactstrap";
 import DemoNavbar from "components/Navbars/DemoNavbar.jsx";
 import SimpleFooter from "components/Footers/SimpleFooter.jsx";
 
-class QuemSomos extends React.Component {
+class Quemsomos extends React.Component {
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
@@ -31,70 +31,63 @@ class QuemSomos extends React.Component {
             </div>
             {/* SVG separator */}
             <div className="separator separator-bottom separator-skew">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="none"
-                version="1.1"
-                viewBox="0 0 2560 100"
-                x="0"
-                y="0"
-              >
-                <polygon
-                  className="fill-white"
-                  points="2560 0 2560 100 0 100"
-                />
-              </svg>
+              <polygon
+                className="fill-white"
+                points="2560 0 2560 100 10 100"
+              />
             </div>
           </section>
-          <section className="section">
+          <section className="section mt--200">
             <Container>
               <Card className="card-profile shadow mt--300">
                 <div className="px-4">
                   <Row className="justify-content-center">
-                    <Col className="order-lg-2" lg="3">
+                    <Col className="order-lg-2" lg="5">
                       <div className="card-profile-image">
-                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                        <a href="http://instagram.com/">
                           <img
                             alt="..."
                             className="rounded-circle"
-
+                            src={require("assets/img/theme/img-1-1200x1000.jpg")}
                           />
                         </a>
                       </div>
                     </Col>
+                    <div className="card-center py-4 mt-lg-2">
+                    </div>
 
                   </Row>
                   <div className="text-center mt-5">
                     <h3>
-                      Freed app
+                      Freed App
                     </h3>
                     <div className="h6 font-weight-300">
                       <i className="ni location_pin mr-2" />
-                      Webapp para restaurantes.
-                      <p>
-                        Faça pedidos sem esperare em filas.
-                      </p>
+                      Startup
                     </div>
                     <div className="h6 mt-4">
                       <i className="ni business_briefcase-24 mr-2" />
-                      Solução incrível para gerenciar restaurante
+                      Solução inovadora para seu restaurante. Pensado com carinho para você crescer
                     </div>
                     <div>
                       <i className="ni education_hat mr-2" />
-                      Faça pedidos sem burocracia
+                      Sem reinventar a roda, apenas sofisticá-la.
                     </div>
                   </div>
                   <div className="mt-5 py-5 border-top text-center">
                     <Row className="justify-content-center">
                       <Col lg="9">
-                        <p>
-                          Lorem ipsum, lorem ipsum lorem lorem ipsum Lorem ipsum, lorem ipsum lorem lorem ipsum
-                          Lorem ipsum, lorem ipsum lorem lorem ipsum Lorem ipsum, lorem ipsum lorem lorem ipsum
-                          Lorem ipsum, lorem ipsum lorem lorem ipsum Lorem ipsum, lorem ipsum lorem lorem ipsum
-                          Lorem ipsum, lorem ipsum lorem lorem ipsum Lorem ipsum, lorem ipsum lorem lorem ipsum
-                          Lorem ipsum, lorem ipsum lorem lorem ipsum Lorem ipsum, lorem ipsum lorem lorem ipsum
-                        </p>
 
+                        <a>NOSSA HISTÓRIA</a>
+                        <p>
+                          Freed é uma startup com foco no setor de restaurantes.
+                          Oferece soluções para melhor gestão dos restaurantes. Afim de baratear
+                          os custos de administração e otimizar o tempo de atendimento.
+                        </p>
+                        <p>
+                          Além de oferecer uma aplicação web sofisticada e simples de usar, Freed também
+                          oferece um app mobile para sincronizar com a versão dos restaurantes.
+                        </p>
                       </Col>
                     </Row>
                   </div>
@@ -108,4 +101,4 @@ class QuemSomos extends React.Component {
     );
   }
 }
-export default QuemSomos;
+export default Quemsomos;
