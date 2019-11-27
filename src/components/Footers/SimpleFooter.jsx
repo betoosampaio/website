@@ -19,19 +19,19 @@ class SimpleFooter extends React.Component {
       <>
         <footer className="footer">
           <Container>
-            <Row className=" row-grid align-items-center mb-5">
+            <Row className="row-grid align-items-center mb-5">
               <Col lg="6">
-                <h3 className=" text-primary font-weight-light mb-2">
-                  Freedapp - solução para restaurantes
+                <h3 className="display-3 text-primary font-weight-light mb-2">
+                  Freedapp
                 </h3>
-                <h4 className=" mb-0 font-weight-light">
-                  Computador, tablet ou celular. Lorem ipsum lorem ipsum.
+                <h4 className="mb-0 font-weight-light">
+                Um jeito inovador de gerenciar seu restaurante.
                 </h4>
               </Col>
-              <Col className=" text-lg-center btn-wrapper" lg="6">
+              <Col className="text-lg-center btn-wrapper" lg="6">
 
                 <Button
-                  className=" btn-neutral btn-icon-only btn-round ml-1"
+                  className="btn-neutral btn-icon-only btn-round ml-1"
                   color="facebook"
                   href="https://www.facebook.com/freedapp"
                   id="tooltip383967593"
