@@ -61,7 +61,7 @@ class Navbars extends React.Component {
                 <NavItem>
                   <NavLink
                     className="nav-link-icon"
-                    href="http://localhost:3000"
+                    to="/home-page" tag={Link}
                   > Home
                     <span className="nav-link-inner--text d-lg-none"></span>
                   </NavLink>
@@ -89,15 +89,6 @@ class Navbars extends React.Component {
                     className="nav-link-icon"
                     href="http://localhost:3003/#/login"
                   > Login restaurantes
-                    <span className="nav-link-inner--text d-lg-none"></span>
-                  </NavLink>
-                </NavItem>
-
-                <NavItem>
-                  <NavLink
-                    className="nav-link-icon"
-                    to="/hero-page" tag={Link}
-                  > Hero
                     <span className="nav-link-inner--text d-lg-none"></span>
                   </NavLink>
                 </NavItem>

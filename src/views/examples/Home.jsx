@@ -75,7 +75,7 @@ class CardsFooter extends React.Component {
             <Row>
               <Col className="mb-5 mb-md-0" md="6">
                 <Card className="card-lift--hover shadow border-0">
-                  <NavLink href="http://localhost:3003/#/login">
+                  <NavLink href="http://localhost:3000/restaurante-page">
                     <CardImg
                       alt="..."
                       src={require("assets/img/theme/arearestaurante.png")}
@@ -85,7 +85,7 @@ class CardsFooter extends React.Component {
               </Col>
               <Col className="mb-5 mb-lg-0" md="6">
                 <Card className="card-lift--hover shadow border-0">
-                  <Link to="/profile-page">
+                  <Link to="/cliente-page">
                     <CardImg
                       alt="..."
                       src={require("assets/img/theme/areacliente1.png")}

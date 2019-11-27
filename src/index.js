@@ -7,9 +7,10 @@ import "assets/vendor/font-awesome/css/font-awesome.min.css";
 import "assets/scss/argon-design-system-react.scss";
 
 import PaginaRestaurante from "views/examples/PaginaRestaurante.jsx";
+import PaginaCliente from "views/examples/PaginaCliente.jsx";
 import QuemSomos from "views/examples/QuemSomos.jsx";
 import Contato from "views/examples/Contato.jsx";
-import Hero from "views/examples/Hero.jsx";
+import Home from "views/examples/Home.jsx";
 
 
 ReactDOM.render(
@@ -17,9 +18,16 @@ ReactDOM.render(
     <Switch>
       <Route path="/" exact render={props => <PaginaRestaurante {...props} />} />
       <Route
-        path="/landing-page"
+        path="/restaurante-page"
         exact
         render={props => <PaginaRestaurante {...props} />}
+      />
+
+      <Route path="/" exact render={props => <PaginaCliente {...props} />} />
+      <Route
+        path="/cliente-page"
+        exact
+        render={props => <PaginaCliente {...props} />}
       />
 
       <Route path="/" exact render={props => <QuemSomos {...props} />} />
@@ -36,11 +44,11 @@ ReactDOM.render(
         render={props => <Contato {...props} />}
       />
 
-      <Route path="/" exact render={props => <Hero {...props} />} />
+      <Route path="/" exact render={props => <Home {...props} />} />
       <Route
-        path="/hero-page"
+        path="/home-page"
         exact
-        render={props => <Hero {...props} />}
+        render={props => <Home {...props} />}
       />
 
       <Redirect to="/" />
