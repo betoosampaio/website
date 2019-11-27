@@ -20,7 +20,7 @@ import SimpleFooter from "components/Footers/SimpleFooter.jsx";
 
 
 
-class Landing extends React.Component {
+class PaginaCliente extends React.Component {
   state = {};
   componentDidMount() {
     document.documentElement.scrollTop = 0;
@@ -34,7 +34,7 @@ class Landing extends React.Component {
         <main ref="main">
           <div className="position-relative">
             {/* shape Hero */}
-            <section className="section section-lg section-shaped pb-250">
+            <section className="section section- section-shaped pb-250">
               <div className="shape shape-style-1 shape-default">
                 <span />
                 <span />
@@ -46,40 +46,32 @@ class Landing extends React.Component {
                 <span />
                 <span />
               </div>
-              <Container className="py-lg-md d-flex">
+              <Container className="py-lg-sm d-flex">
                 <div className="col px-0">
                   <Row>
                     <Col lg="-6">
-                      <h1 className="display-3 text-white">
+                      <h1 className="display-2 text-white">
                         FREED{" "}
-                        <span>Lorem ipsum lorem ipsum</span>
                       </h1>
                       <p className="lead text-white">
-                        Sistema para <a href="http://localhost:3003/#/login">gerenciamento de restaurantes. </a>
+                        Sistema para <Badge color="primary" pill className="text-white mr-1" href="http://localhost:3003/#/login">gerenciamento de restaurantes.  </Badge>
                         <p></p>
-                        Baixe o app e faça você mesmo seus pedidos. Sem fila, sem burocracia, e sem demora!
+                        <div>
+                          <h1 className="display-4 text-white">
+                            O jeito de pedir comida mudou, o de gerenciar restaurantes também.
+                          </h1>
+                        </div>
                       </p>
                       <div className="btn-wrapper">
                         <Button
                           className="btn-icon mb-3 mb-sm-0 ml-1"
-                          color="info"
+                          color="success"
                           href=""
                         >
                           <span className="btn-inner--icon mb-3 mr-1">
                             <i className="ni ni-cloud-download-95" />
                           </span>
                           <span className="btn-inner--text">PlayStore</span>
-                        </Button>
-                        <p></p>
-                        <Button
-                          className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
-                          color="default"
-                          href=""
-                        >
-                          <span className="btn-inner--icon mr-1">
-                            <i className="ni ni-cloud-download-95" />
-                          </span>
-                          <span className="btn-inner--text">AppStore</span>
                         </Button>
                       </div>
                     </Col>
@@ -114,25 +106,24 @@ class Landing extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <i className="ni ni-check-bold" />
+                            <i className="ni ni-tv-2" />
                           </div>
                           <h6 className="text-primary text-uppercase">
-                            Download Freed
+                            Freed webapp
                           </h6>
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                            Use a tecnologia em favor do seu restaurante.
+                            Freed facilita a gestão do seu restaurante.
                           </p>
                           <div>
                             <Badge color="primary" pill className="mr-1">
-                              design
+                              tecnologia
                             </Badge>
                             <Badge color="primary" pill className="mr-1">
-                              system
+                              otimização do tempo
                             </Badge>
                             <Badge color="primary" pill className="mr-1">
-                              creative
+                              gestão do seu negócio
                             </Badge>
                           </div>
                           <Button
@@ -150,25 +141,25 @@ class Landing extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
-                            <i className="ni ni-istanbul" />
+                            <i className="ni ni-cart" />
                           </div>
                           <h6 className="text-success text-uppercase">
-                            Liberdade para pedir comida
+                            Liberdade para seus clientes
                           </h6>
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                            Seus clientes podem baixar o Freed app
+                            e fazer os próprios pedidos. Assim sua equipe
+                            foca na qualidade da comida.
                           </p>
                           <div>
                             <Badge color="success" pill className="mr-1">
-                              business
+                              rápido
                             </Badge>
                             <Badge color="success" pill className="mr-1">
-                              vision
+                              fácil
                             </Badge>
                             <Badge color="success" pill className="mr-1">
-                              success
+                              sem burocracia
                             </Badge>
                           </div>
                           <Button
@@ -186,25 +177,26 @@ class Landing extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                            <i className="ni ni-planet" />
+                            <i className="ni ni-satisfied" />
                           </div>
                           <h6 className="text-warning text-uppercase">
-                            App bonito e fácil de usar
+                            Freed web + Freed APP
                           </h6>
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                            Duas tecnologias inéditas. Você gerenciar melhor seu
+                            restaurante e seus clientes fazem pedidos sem demora ou
+                            burocracias.
+
                           </p>
                           <div>
                             <Badge color="warning" pill className="mr-1">
-                              marketing
+                              sem demora
                             </Badge>
                             <Badge color="warning" pill className="mr-1">
-                              product
+                              dois em um
                             </Badge>
                             <Badge color="warning" pill className="mr-1">
-                              launch
+                              melhor desempenho
                             </Badge>
                           </div>
                           <Button
@@ -571,4 +563,4 @@ class Landing extends React.Component {
   }
 }
 
-export default Landing;
+export default PaginaCliente;

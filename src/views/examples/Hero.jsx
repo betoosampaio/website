@@ -35,15 +35,44 @@ class CardsFooter extends React.Component {
                     </p>
                   {/*    <p></p>
                     Baixe o app e faça pedidos nos melhores restaurantes da cidade. Rápido e descomplicado, você é livre!
-                  </p>
-*/}
+                  </p>*/}
                 </Col>
+               {/* <section className="section section-lg pt-1">
+                  <Container>
+                    <Card className="bg-gradient-primary shadow-lg border-0">
+                      <div className="p-3">
+                        <Row className="align-items-center">
+                          <Col lg="8">
+                            <h3 className="text-white">
+                              Freed app
+                            </h3>
+                            <p className="lead text-white mt-3">
+                              Solução completa para o seu restaurante crescer. Gestão do seu restaurante para você.
+                              App de pedidos para seus clientes.
+                      </p>
+                          </Col>
+                          <Col className="ml-lg-auto" lg="3">
+                            <Button
+                              block
+                              className="btn-white"
+                              color="default"
+                              href="https://"
+                              size="lg"
+                            >
+                              Cadastre-se agora!
+                      </Button>
+                          </Col>
+                        </Row>
+                      </div>
+                    </Card>
+                  </Container>
+                </section>*/}
               </Row>
             </div>
           </Container>
         </div>
         <footer className="footer has-cards">
-          <Container className="container-lg">
+          <Container className="container-sm py-0">
             <Row>
               <Col className="mb-5 mb-md-0" md="6">
                 <Card className="card-lift--hover shadow border-0">
@@ -114,7 +143,7 @@ class CardsFooter extends React.Component {
                 <div className=" copyright">
                   © {new Date().getFullYear()}{" "}
                   <a
-                    href="https://www.freedapp.com.br"                   
+                    href="https://www.freedapp.com.br"
                   >
                     Freed app - feito com <i className=" fa fa-heart" />
                   </a>
