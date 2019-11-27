@@ -32,10 +32,16 @@ class PaginaRestaurante extends React.Component {
       <>
         <DemoNavbar />
         <main ref="main">
-          <div className="position-relative">
+          <div className="position-relative ">
             {/* shape Hero */}
             <section className="section section- section-shaped pb-250">
-              <div className="shape shape-style-1 shape-default">
+              <div className="shape shape-style-1 shape-default" >
+                {/*<img
+                          alt="..."
+                          className="img-fluid"
+                          src={require("assets/img/theme/img-1-1200x1000.jpg")}
+                          style={{ background-image: "200px" }}
+                        />*/}
                 <span />
                 <span />
                 <span />
@@ -51,6 +57,7 @@ class PaginaRestaurante extends React.Component {
                   <Row>
                     <Col lg="-6">
                       <h1 className="display-2 text-white">
+
                         FREED{" "}
                       </h1>
                       <p className="lead text-white">
@@ -235,7 +242,7 @@ class PaginaRestaurante extends React.Component {
                         block
                         className="btn-white"
                         color="default"
-                        href="https://"
+                        href="http://localhost:3003/#/registrar"
                         size="lg"
                       >
                         Cadastre-se agora!
@@ -246,7 +253,7 @@ class PaginaRestaurante extends React.Component {
               </Card>
             </Container>
           </section>
-          <section className="section pb-2 bg-gradient-primary">
+          <section className="section pb-2 bg-gradient-primary pt-0">
             <Container>
               <Row className="row-grid align-items-center">
                 <Col className="order-lg-2 ml-lg-auto" md="6">
@@ -290,7 +297,7 @@ class PaginaRestaurante extends React.Component {
                             Obtenha dashboards, relatórios e muito mais!
                           </p>
                           <a className="text-success">
-                           Dashboard simples e fácil de entender
+                            Dashboard simples e fácil de entender
                           </a>
                         </div>
                       </div>
@@ -327,10 +334,10 @@ class PaginaRestaurante extends React.Component {
                   </Card>
                 </Col>
               </Row>
-            </Container>   
-          
+            </Container>
+
             {/* SVG separator */}
-      
+
             <div className="separator separator-bottom separator-skew zindex-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -348,7 +355,7 @@ class PaginaRestaurante extends React.Component {
             </div>
           </section>
 
-          <p></p><p></p>          
+          <p></p><p></p>
 
         </main>
         <SimpleFooter />

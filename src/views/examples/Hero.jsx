@@ -19,9 +19,9 @@ class CardsFooter extends React.Component {
     return (
       <>
         <div>
-          <Container className="shape-container d-flex align-items-center py-2">
+          <Container className="shape-container d-flex align-items-center py-4">
             <div className="col">
-              <Row className="align-items-center justify-content-center">
+              <Row className="align-items-center justify-content-center py-0">
                 <Col className="text-center" lg="6">
                   <img
                     alt="..."
@@ -29,22 +29,21 @@ class CardsFooter extends React.Component {
                     src={require("assets/img/brand/logo.png")}
                     style={{ width: "200px" }}
                   />
-                  <p className="lead text-primary font-weight">
-                    <p></p>
-                    O melhor sistema para gerenciar seu restaurante.
-                    </p>
-                  {/*    <p></p>
+                  {/* <h1 className="display-4 text-primary">
+                    O jeito de pedir comida mudou, o de gerenciar restaurantes também.
+                  </h1>
+                   <p></p>
                     Baixe o app e faça pedidos nos melhores restaurantes da cidade. Rápido e descomplicado, você é livre!
                   </p>*/}
                 </Col>
-               {/* <section className="section section-lg pt-1">
+                <section className="section section-lg py-2">
                   <Container>
                     <Card className="bg-gradient-primary shadow-lg border-0">
                       <div className="p-3">
                         <Row className="align-items-center">
                           <Col lg="8">
-                            <h3 className="text-white">
-                              Freed app
+                            <h3 className="display-3 text-white">
+                              Gestão de restaurante
                             </h3>
                             <p className="lead text-white mt-3">
                               Solução completa para o seu restaurante crescer. Gestão do seu restaurante para você.
@@ -66,7 +65,7 @@ class CardsFooter extends React.Component {
                       </div>
                     </Card>
                   </Container>
-                </section>*/}
+                </section>
               </Row>
             </div>
           </Container>
