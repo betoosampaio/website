@@ -58,7 +58,7 @@ class CardsFooter extends React.Component {
                               href="https://"
                               size="lg"
                             >
-                              Cadastre-se agora!
+                              Quero ser FREED!
                       </Button>
                           </Col>
                         </Row>

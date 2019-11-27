@@ -215,7 +215,7 @@ class PaginaCliente extends React.Component {
               </Row>
             </Container>
           </section>
-          <section className="section section-lg">
+          <section className="section section-lg py-0">
             <Container>
               <Row className="row-grid align-items-center">
                 <Col className="order-md-2" md="6">
@@ -230,10 +230,9 @@ class PaginaCliente extends React.Component {
                     <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
                       <i className="ni ni-settings-gear-65" />
                     </div>
-                    <h3>Mockups do app mobile</h3>
+                    <h3>Freedapp um novo jeito de pedir comida</h3>
                     <p>
-                      Ao lado inserimos mockups sobre o app mobile
-                      podendo conter até 2 mockups. Devem ser bonitos para atrair curiosidade.
+                      Faça você mesmo seus pedidos direto no restaurante. Mais liberdade pra você, menos tempo perdido.
                     </p>
                     <ul className="list-unstyled mt-5">
                       <li className="py-2">
@@ -243,7 +242,7 @@ class PaginaCliente extends React.Component {
                               className="badge-circle mr-3"
                               color="success"
                             >
-                              <i className="ni ni-settings-gear-65" />
+                              <i className="ni ni-cart" />
                             </Badge>
                           </div>
                           <div>
@@ -260,11 +259,13 @@ class PaginaCliente extends React.Component {
                               className="badge-circle mr-3"
                               color="success"
                             >
-                              <i className="ni ni-html5" />
+                              <i className="ni ni-single-02" />
                             </Badge>
                           </div>
                           <div>
-                            <h6 className="mb-0">A melhor solução para o clientes</h6>
+                            <h6 className="mb-0">
+                              A melhor solução para o clientes
+                            </h6>
                           </div>
                         </div>
                       </li>
@@ -331,136 +332,38 @@ class PaginaCliente extends React.Component {
                 <Col md="6">
                   <div className="pl-md-5">
                     <div className="icon icon-lg icon-shape icon-shape-primary shadow rounded-circle mb-5">
-                      <i className="ni ni-settings" />
+                      <i className="ni ni-money-coins" />
                     </div>
-                    <h3>Detalhes sobre Freed</h3>
+                    <h3>Por que escolher o Freed?</h3>
                     <p className="lead">
-                      Uma breve introdução de como funciona?.
+                      Porque é mais fácil e você poupa tempo.
                     </p>
                     <p>
-                      Lorem ipsum um belo texto elegante e informativo. Lorem ipsum um belo texto elegante e informativo.
-                      Lorem ipsum um belo texto elegante e informativo. Lorem ipsum um belo texto elegante e informativo.
+                      Nós sabemos que a demora no atendimento dos restaurantes frustra muita gente.
+                      Por isso pensamos na mlhor maneira de resolver este problema.
                     </p>
                     <p>
-                      Motivos para usar Freed. Lorem ipsum um belo texto elegante e informativo.
+                      O Freed funciona assim: você escolhe um restaurante, vai até ele,
+                      abre sua mesa através do QR Code na mesa, incluí os pedidos e pronto!
+                      Agora é só aguardar que aora é a vez do restaurante.
+                    </p>
+                    <p>
+                      Saiba que o Freed é ótimo para sair com a galera. Você pode incluir outras
+                      pessoas na sua mesa, dividir a conta e muito mais
                     </p>
                     <a
                       className="font-weight-bold text-primary mt-5"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+
                     >
-                      FREED FREED FREED FREED FREED FREED FREED
+                      Freed é um novo jeito de pedir comida nos restaurantes.
                     </a>
                   </div>
                 </Col>
               </Row>
             </Container>
           </section>
-          <section className="section pb-0 bg-gradient-primary">
-            <Container>
-              <Row className="row-grid align-items-center">
-                <Col className="order-lg-2 ml-lg-auto" md="6">
-                  <div className="position-relative pl-md-5">
-                    <img
-                      alt="..."
-                      className="img-center img-fluid"
-                      src={require("assets/img/ill/ill-2.svg")}
-                    />
-                  </div>
-                </Col>
-                <Col className="order-lg-1" lg="6">
-                  <div className="d-flex px-3">
-                    <div>
-                      <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                        <i className="ni ni-building text-primary" />
-                      </div>
-                    </div>
-                    <div className="pl-4">
-                      <h4 className="display-3 text-white">Interface moderna</h4>
-                      <p className="text-white">
-                        Gerenciar seu restaurante com a melhor ferramenta. Bonita e fácil de usar.
-                      </p>
-                    </div>
-                  </div>
-                  <Card className="shadow shadow-lg--hover mt-5">
-                    <CardBody>
-                      <div className="d-flex px-3">
-                        <div>
-                          <div className="icon icon-shape bg-gradient-success rounded-circle text-white">
-                            <i className="ni ni-satisfied" />
-                          </div>
-                        </div>
-                        <div className="pl-4">
-                          <h5 className="title text-success">
-                            Abrir Caixa
-                          </h5>
-                          <p>
-                            The Arctic Ocean freezes every winter and much of
-                            the sea-ice then thaws every summer, and that
-                            process will continue whatever.
-                          </p>
-                          <a
-                            className="text-success"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            Controle de entradas e saídas
-                          </a>
-                        </div>
-                      </div>
-                    </CardBody>
-                  </Card>
-                  <Card className="shadow shadow-lg--hover mt-5">
-                    <CardBody>
-                      <div className="d-flex px-3">
-                        <div>
-                          <div className="icon icon-shape bg-gradient-primary rounded-circle text-white">
-                            <i className="ni ni-active-40" />
-                          </div>
-                        </div>
-                        <div className="pl-4">
-                          <h5 className="title text-primary">
-                            Gerenciar mesas
-                          </h5>
-                          <p>
-                            The Arctic Ocean freezes every winter and much of
-                            the sea-ice then thaws every summer, and that
-                            process will continue whatever.
-                          </p>
-                          <a
-                            className="text-primary"
-                            href="#pablo"
-                            onClick={e => e.preventDefault()}
-                          >
-                            Pedidos sem erro ou demora
-                          </a>
-                        </div>
-                      </div>
-                    </CardBody>
-                  </Card>
-                </Col>
-              </Row>
-            </Container>
-            {/* SVG separator */}
-            <div className="separator separator-bottom separator-skew zindex-100">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="none"
-                version="1.1"
-                viewBox="0 0 2560 100"
-                x="0"
-                y="0"
-              >
-                <polygon
-                  className="fill-white"
-                  points="2560 0 2560 100 0 100"
-                />
-              </svg>
-            </div>
-          </section>
-
           <p></p><p></p>
-
           <section className="section section-lg pt-0">
             <Container>
               <Card className="bg-gradient-primary shadow-lg border-0">
@@ -468,23 +371,22 @@ class PaginaCliente extends React.Component {
                   <Row className="align-items-center">
                     <Col lg="8">
                       <h3 className="text-white">
-                        Freed
+                        Freed app
                       </h3>
                       <p className="lead text-white mt-3">
-                        I will be the leader of a company that ends up being
-                        worth billions of dollars, because I got the answers. I
-                        understand culture.
+                        Você já viu as inúmeras vantagens de usar Freed, não é mesmo? Agora é
+                        sua vez de baixar e experimentar. É totalmente de graça!
                       </p>
                     </Col>
-                    <Col className="ml-lg-auto" lg="3">
+                    <Col className="ml-lg-auto" lg="34">
                       <Button
                         block
                         className="btn-white"
                         color="default"
-                        href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
+                        href="https://"
                         size="lg"
                       >
-                        Cadastre-se agora!
+                        Eu quero experimentar!
                       </Button>
                     </Col>
                   </Row>
@@ -492,16 +394,14 @@ class PaginaCliente extends React.Component {
               </Card>
             </Container>
           </section>
-          <section className="section section-lg bg-gradient-primary">
+          <section className="section section-lg bg-gradient-primary py-0">
             <Container className="pt-lg pb-80">
               <Row className="text-center justify-content-center">
                 <Col lg="10">
-                  <h2 className="display-3 text-white">Alguma informação sobre o webapp</h2>
+                  <h2 className="display-3 text-white">Freed app e Restaurantes Parceiros</h2>
                   <p className="lead text-white">
-                    According to the National Oceanic and Atmospheric
-                    Administration, Ted, Scambos, NSIDClead scentist, puts the
-                    potentially record low maximum sea ice extent tihs year down
-                    to low ice.
+                    Para usar o Freed app você precisará encontrar no app Restaurantes Parceiros já
+                    cadastrados. Freed cabe em qualquer bolso e é para todos os gostos. Experimente!
                   </p>
                 </Col>
               </Row>
@@ -512,8 +412,21 @@ class PaginaCliente extends React.Component {
                   </div>
                   <h5 className="text-white mt-3">Melhor solução do mercado</h5>
                   <p className="text-white mt-3">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    Freed tem tudo que você precisa. Faça pedidos, divida a conta, escolha pelo preço,
+                    pela especialiadade etc...
+                  </p>
+                </Col>
+                <Col lg="4">
+                  <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+                    <i className="ni ni-atom text-primary" />
+                  </div>
+                  <h5 className="text-white mt-3">Economize tempo e divirta-se</h5>
+                  <p className="text-white mt-3">
+                    Você é livre!
+              <br></br>
+                    A facilidade de usar Freed para fazer pedidos nos restaurantes. Te permite
+                    mais tempo com os amigos, menos tempo escolhendo ou revendo seus pedidos. Você não
+                    precisa um garçom vir te atender.
                   </p>
                 </Col>
                 <Col lg="4">
@@ -522,20 +435,11 @@ class PaginaCliente extends React.Component {
                   </div>
                   <h5 className="text-white mt-3">Poupe dinheiro e economize tempo</h5>
                   <p className="text-white mt-3">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    Freed tem a missão de diminuir o tempo de atendimento. O que permite
+                    aos garçons mais desempenho e menos tempo com atividades desnecessárias.
                   </p>
                 </Col>
-                <Col lg="4">
-                  <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                    <i className="ni ni-atom text-primary" />
-                  </div>
-                  <h5 className="text-white mt-3">Tudo em um</h5>
-                  <p className="text-white mt-3">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </Col>
+
               </Row>
             </Container>
             {/* SVG separator */}
@@ -544,13 +448,13 @@ class PaginaCliente extends React.Component {
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="none"
                 version="1.1"
-                viewBox="0 0 2560 100"
+                viewBox="100 100 2560 100"
                 x="0"
                 y="0"
               >
                 <polygon
                   className="fill-white"
-                  points="2560 0 2560 100 0 100"
+                  points="2560 10 2560 10 10 100"
                 />
               </svg>
             </div>
