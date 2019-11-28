@@ -13,9 +13,11 @@ import Contato from "views/examples/Contato.jsx";
 import Home from "views/examples/Home.jsx";
 
 
+
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
+    
       <Route path="/" exact render={props => <PaginaRestaurante {...props} />} />
       <Route
         path="/restaurante-page"

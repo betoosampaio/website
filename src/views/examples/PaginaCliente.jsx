@@ -50,16 +50,14 @@ class PaginaCliente extends React.Component {
               <Container className="py-lg-sm d-flex">
                 <div className="col px-0">
                   <Row>
-                    <Col lg="-6">
-                      <h1 className="display-2 text-white">
+                    <Col>
+                      <h1 className=" display-2 text-white">
                         FREED{" "}
                       </h1>
                       <p className="lead text-white">
-                        Sistema para <Badge color="primary" pill className="text-white mr-1" href="http://localhost:3003/#/login">gerenciamento de restaurantes.  </Badge>
-                        <p></p>
                         <div>
-                          <h1 className="display-4 text-white">
-                            O jeito de pedir comida mudou, o de gerenciar restaurantes também.
+                          <h1 className="lead text-white">
+                            Pedir comida no restaurante ficou mais fácil, rápido e descomplicado, experimente!
                           </h1>
                         </div>
                       </p>
